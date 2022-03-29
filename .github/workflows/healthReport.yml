@@ -28,4 +28,5 @@ jobs:
         env:
           DATA: ${{ secrets.DATA }}
         run: |
-          python health_report_helper/main.py
+          python health_report_helper/main.py "${{ secrets.DATA }}"
+          python health_report_helper/main.py "${{ secrets.DATA }}"
